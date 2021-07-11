@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 
-export interface ProductProps {
+export interface CardListProps {
 	children?: ReactNode;
-	product: any;
 }

@@ -4,7 +4,7 @@ const products: Array<ProductsProps> = [
 	{
 		vendorСode: 43032746,
 		name: "Completion Chronograph Silver Bracelet Watch",
-		image: "/assets/images/43032746_000_main.png",
+		image: "/images/43032746_000_main.png",
 		description:
 			"A precise timing instrument, this Calvin Klein completion watch features chronograph pushers at the sides and a refined aesthetic. Detailed with a contrasting blue minute ring, 3 sub-dials, brushed center links and polished outer links on the stainless steel bracelet.",
 		brand: "Calvin Klein",
@@ -24,7 +24,7 @@ const products: Array<ProductsProps> = [
 	{
 		vendorСode: 43032136,
 		name: "Completion Leather Chronograph Watch",
-		image: "/assets/images/43032136_000_main.png",
+		image: "/images/43032136_000_main.png",
 		description:
 			"Retro-styled with a square case shape, this timeless watch is made with stainless steel and a 3-hand design with red accents. Features a stainless steel bracelet, a mineral crystal and a swiss quartz movement.",
 		brand: "Calvin Klein",
@@ -43,7 +43,7 @@ const products: Array<ProductsProps> = [
 	{
 		vendorСode: 43032716,
 		name: "Squarely Bracelet Watch",
-		image: "/assets/images/43032716_000_main.png",
+		image: "/images/43032716_000_main.png",
 		description:
 			"Calvin Klein completion. This racing-inspired design offers precision time keeping with a refined, dressy aesthetic. Crafted with polished stainless steel and a scratch-resistant sapphire crystal, a black leather strap and a silver dial with blue and white accents.",
 		brand: "Calvin Klein",
@@ -63,7 +63,7 @@ const products: Array<ProductsProps> = [
 	{
 		vendorСode: 43039115,
 		name: "Fraternity Leather Watch",
-		image: "/assets/images/43039115_000_main.png",
+		image: "/images/43039115_000_main.png",
 		description:
 			"Featuring a classic case design, this timeless watch is made with a pvd coated stainless steel case and a leather strap. Made with a goldtone handset, a 3 o'clock date window, a mineral crystal and a swiss quartz movement.",
 		brand: "Calvin Klein",
@@ -81,7 +81,7 @@ const products: Array<ProductsProps> = [
 	{
 		vendorСode: 43042206,
 		name: "City Brown Leather Watch",
-		image: "/assets/images/43042206_000_main.png",
+		image: "/images/43042206_000_main.png",
 		description:
 			"Precise. Sophisticated. Calvin Klein City Extension. A timeless and iconic design for those that live a modern lifestyle. The Calvin Klein City watch features a subtle sunburst dial with a polished rose gold pvd case.",
 		brand: "Calvin Klein",
@@ -99,7 +99,7 @@ const products: Array<ProductsProps> = [
 		vendorСode: 43041129,
 		name: "Established Leather Watch",
 		image:
-			"/assets/images/FireShot_Capture_004_-_Часы_-_CALVIN_KLEIN_Established_Calvin_Klein__-_00K9H211C1BLK__-_www.calvinklein 1.png",
+			"/images/FireShot_Capture_004_-_Часы_-_CALVIN_KLEIN_Established_Calvin_Klein__-_00K9H211C1BLK__-_www.calvinklein 1.png",
 		description:
 			"Architectural. Retro. Calvin Klein established. An iconic look with infallible chic. The well-designed round and curved glass pebble case, along with the meticulous details on the dial make of this timepiece the perfect fusion of radical modernity and timeless sophistication.",
 		brand: "Calvin Klein",
