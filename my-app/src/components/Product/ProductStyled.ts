@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Card } from "react-bootstrap";
 
 export const CardProductImage = styled.img`
 	max-width: 100%;
@@ -17,4 +18,8 @@ export const CardTitle = styled.div`
 export const ProductLink = styled.a`
 	cursor: pointer;
 	text-decoration: none;
+`;
+
+export const CardStyled = styled(Card)`
+	margin: 1.2rem;
 `;

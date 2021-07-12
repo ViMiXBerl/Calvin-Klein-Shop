@@ -42,6 +42,13 @@ export const TextHeading5 = styled.h5`
 	text-transform: none;
 	letter-spacing: normal;
 `;
+export const TextHeading6 = styled.h6`
+	font-family: "Red Hat Text 400";
+	color: ${colors.black};
+	font-size: ${FONT_SIZES.size28};
+	text-transform: none;
+	letter-spacing: normal;
+`;
 
 export const TextParagraph1 = styled.p`
 	font-family: "Red Hat Text 500";

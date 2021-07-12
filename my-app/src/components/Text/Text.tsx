@@ -5,6 +5,7 @@ import {
 	TextHeading3,
 	TextHeading4,
 	TextHeading5,
+	TextHeading6,
 	TextParagraph1,
 	TextParagraph2,
 	TextParagraph3,
@@ -28,6 +29,8 @@ const Text = ({ variant = "p", children }: TextProps): any => {
 
 		case "h5":
 			return <TextHeading5>{children}</TextHeading5>;
+		case "h6":
+			return <TextHeading6>{children}</TextHeading6>;
 
 		case "p1":
 			return <TextParagraph1>{children}</TextParagraph1>;

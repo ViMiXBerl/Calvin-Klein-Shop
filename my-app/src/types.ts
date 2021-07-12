@@ -17,4 +17,5 @@ export interface ProductsProps {
 	caseSize: number;
 	waterResistant: number;
 	color: string;
+	new?: boolean;
 }

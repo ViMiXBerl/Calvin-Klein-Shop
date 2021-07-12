@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container, Image } from "react-bootstrap";
 import { HeaderProps } from "modules/Header/types";
 import logo from "assets/images/klipartz 1.png";
-import { Search, Cart, Favorite } from "assets";
+import { Search, Cart } from "assets";
 
 import Text from "components/Text/Text";
 import {
@@ -22,7 +22,7 @@ const Header = ({ children }: HeaderProps): any => {
 					<NavbarStyled id='basic-navbar-nav'>
 						<Nav className='ml-auto'>
 							<NavStyled href='/home'>
-								<Text variant='p2'>Home</Text>
+								<Text variant='p2'>Main</Text>
 							</NavStyled>
 							<NavStyled href='/catalog'>
 								<Text variant='p2'>Catalog</Text>
