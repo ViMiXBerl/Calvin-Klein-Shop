@@ -1,20 +1,21 @@
 import Header from "modules/Header/Header";
-import { HomeProps } from "pages/Home/types";
+import { MainProps } from "pages/Main/types";
 import NewProductsList from "modules/NewProductsList/NewProductsList";
 import { Container } from "react-bootstrap";
 
-const Home = ({ children }: HomeProps): any => {
+const Main = ({ children }: MainProps): any => {
 	return (
 		<>
 			<Container>
 				<Header />
 			</Container>
-
-			<Container>
-				<NewProductsList />
-			</Container>
+			<main>
+				<Container>
+					<NewProductsList />
+				</Container>
+			</main>
 		</>
 	);
 };
 
-export default Home;
+export default Main;

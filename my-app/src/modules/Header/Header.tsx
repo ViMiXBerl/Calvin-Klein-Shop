@@ -15,13 +15,13 @@ const Header = ({ children }: HeaderProps): any => {
 		<header>
 			<Navbar expand='lg' collapseOnSelect>
 				<Container>
-					<Navbar.Brand href='/'>
+					<Navbar.Brand href='/main'>
 						<Image src={logo}></Image>
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<NavbarStyled id='basic-navbar-nav'>
 						<Nav className='ml-auto'>
-							<NavStyled href='/home'>
+							<NavStyled href='/main'>
 								<Text variant='p2'>Main</Text>
 							</NavStyled>
 							<NavStyled href='/catalog'>

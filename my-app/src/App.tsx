@@ -1,12 +1,13 @@
 import ProductList from "modules/NewProductsList/NewProductsList";
 import { Container } from "react-bootstrap";
-import Home from "pages/Home/Home";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from "routes/AppRouter";
 
 const App = (): any => {
 	return (
-		<>
-			<Home></Home>
-		</>
+		<Router>
+			<AppRouter />
+		</Router>
 	);
 };
 
