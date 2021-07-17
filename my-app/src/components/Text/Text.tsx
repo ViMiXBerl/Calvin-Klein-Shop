@@ -11,9 +11,17 @@ import {
 	TextParagraph3,
 	TextDescription1,
 	TextDescription2,
+	TextButton,
+	TextDescription3,
+	TextDescription4,
+	TextDescription5,
 } from "components/Text/TextStyles";
 
-const Text = ({ variant = "p", children }: TextProps): any => {
+const Text = ({
+	variant = "p",
+	children,
+	variantNumber = 0,
+}: TextProps): any => {
 	switch (variant) {
 		case "h1":
 			return <TextHeading1>{children}</TextHeading1>;
@@ -40,12 +48,20 @@ const Text = ({ variant = "p", children }: TextProps): any => {
 
 		case "p3":
 			return <TextParagraph3>{children}</TextParagraph3>;
+		case "p4":
+			return <TextButton>{children}</TextButton>;
 
 		case "d1":
 			return <TextDescription1>{children}</TextDescription1>;
 
 		case "d2":
 			return <TextDescription2>{children}</TextDescription2>;
+		case "d3":
+			return <TextDescription3>{children}</TextDescription3>;
+		case "d4":
+			return <TextDescription4>{children}</TextDescription4>;
+		case "d5":
+			return <TextDescription5>{children}</TextDescription5>;
 		default:
 			return <TextDescription2>{children}</TextDescription2>;
 	}

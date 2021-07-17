@@ -6,6 +6,8 @@ export const FONT_SIZES: FontSizes = {
 	size18: "18px",
 	size24: "24px",
 	size28: "28px",
+	size32: "32px",
+	size36: "36px",
 	size48: "48px",
 	size64: "64px",
 	size72: "72px",

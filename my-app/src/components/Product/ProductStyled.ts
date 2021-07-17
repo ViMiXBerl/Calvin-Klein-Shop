@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const CardProductImage = styled.img`
 	max-width: 100%;
@@ -15,7 +16,7 @@ export const CardTitle = styled.div`
 	margin-bottom: 0.5rem;
 `;
 
-export const ProductLink = styled.a`
+export const ProductLink = styled(Link)`
 	cursor: pointer;
 	text-decoration: none;
 `;

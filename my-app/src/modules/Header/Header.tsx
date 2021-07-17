@@ -1,4 +1,5 @@
 import { Navbar, Nav, Container, Image } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 import { HeaderProps } from "modules/Header/types";
 import logo from "assets/images/klipartz 1.png";
 import { Search, Cart } from "assets";
@@ -15,40 +16,58 @@ const Header = ({ children }: HeaderProps): any => {
 		<header>
 			<Navbar expand='lg' collapseOnSelect>
 				<Container>
-					<Navbar.Brand href='/main'>
-						<Image src={logo}></Image>
-					</Navbar.Brand>
+					<LinkContainer to='/main'>
+						<Navbar.Brand>
+							<Image src={logo}></Image>
+						</Navbar.Brand>
+					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<NavbarStyled id='basic-navbar-nav'>
 						<Nav className='ml-auto'>
-							<NavStyled href='/main'>
-								<Text variant='p2'>Main</Text>
-							</NavStyled>
-							<NavStyled href='/catalog'>
-								<Text variant='p2'>Catalog</Text>
-							</NavStyled>
-							<NavStyled href='/contacts'>
-								<Text variant='p2'>Contacts</Text>
-							</NavStyled>
-							<NavStyled href='/delivery'>
-								<Text variant='p2'>Delivery</Text>
-							</NavStyled>
-							<NavStyled href='/stores'>
-								<Text variant='p2'>Stores</Text>
-							</NavStyled>
+							<LinkContainer to='/main'>
+								<NavStyled>
+									<Text variant='p2'>Main</Text>
+								</NavStyled>
+							</LinkContainer>
+							<LinkContainer to='/catalog'>
+								<NavStyled>
+									<Text variant='p2'>Catalog</Text>
+								</NavStyled>
+							</LinkContainer>
+							<LinkContainer to='/contacts'>
+								<NavStyled>
+									<Text variant='p2'>Contacts</Text>
+								</NavStyled>
+							</LinkContainer>
+							<LinkContainer to='/delivery'>
+								<NavStyled>
+									<Text variant='p2'>Delivery</Text>
+								</NavStyled>
+							</LinkContainer>
+							<LinkContainer to='/stores'>
+								<NavStyled>
+									<Text variant='p2'>Stores</Text>
+								</NavStyled>
+							</LinkContainer>
 						</Nav>
 					</NavbarStyled>
 					<NavbarStyled id='basic-navbar-nav'>
 						<Nav className='ml-auto'>
-							<NavStyled href='/search'>
-								<Search />
-							</NavStyled>
-							<NavStyled href='/cart'>
-								<Cart />
-							</NavStyled>
-							<NavStyled href='/favorites'>
-								<FavoriteStyled />
-							</NavStyled>
+							<LinkContainer to='/search'>
+								<NavStyled>
+									<Search />
+								</NavStyled>
+							</LinkContainer>
+							<LinkContainer to='/cart'>
+								<NavStyled>
+									<Cart />
+								</NavStyled>
+							</LinkContainer>
+							<LinkContainer to='/favorites'>
+								<NavStyled>
+									<FavoriteStyled />
+								</NavStyled>
+							</LinkContainer>
 						</Nav>
 					</NavbarStyled>
 				</Container>

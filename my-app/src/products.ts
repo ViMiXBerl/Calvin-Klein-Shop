@@ -2,7 +2,7 @@ import { ProductsProps } from "types";
 
 const products: Array<ProductsProps> = [
 	{
-		vendorСode: 43032746,
+		_vendorСode: "43032746",
 		name: "Completion Chronograph Silver Bracelet Watch",
 		image: "/images/43032746_000_main.png",
 		description:
@@ -22,7 +22,7 @@ const products: Array<ProductsProps> = [
 		color: "SILVER",
 	},
 	{
-		vendorСode: 43032136,
+		_vendorСode: "43032136",
 		name: "Completion Leather Chronograph Watch",
 		image: "/images/43032136_000_main.png",
 		description:
@@ -30,7 +30,7 @@ const products: Array<ProductsProps> = [
 		brand: "Calvin Klein",
 		sex: "Men",
 		price: 249.0,
-		countInStock: 1,
+		countInStock: 0,
 		case: "Stainless steel",
 		bracelet: "Stainless steel",
 		material: "Mineral crystal",
@@ -41,7 +41,7 @@ const products: Array<ProductsProps> = [
 		color: "SILVER",
 	},
 	{
-		vendorСode: 43032716,
+		_vendorСode: "43032716",
 		name: "Squarely Bracelet Watch",
 		image: "/images/43032716_000_main.png",
 		description:
@@ -61,7 +61,7 @@ const products: Array<ProductsProps> = [
 	},
 
 	{
-		vendorСode: 43039115,
+		_vendorСode: "43039115",
 		name: "Fraternity Leather Watch",
 		image: "/images/43039115_000_main.png",
 		description:
@@ -79,7 +79,7 @@ const products: Array<ProductsProps> = [
 		color: "SILVER",
 	},
 	{
-		vendorСode: 43042206,
+		_vendorСode: "43042206",
 		name: "City Brown Leather Watch",
 		image: "/images/43042206_000_main.png",
 		description:
@@ -96,7 +96,7 @@ const products: Array<ProductsProps> = [
 		color: "GOLD",
 	},
 	{
-		vendorСode: 43041129,
+		_vendorСode: "43041129",
 		name: "Established Leather Watch",
 		image:
 			"/images/FireShot_Capture_004_-_Часы_-_CALVIN_KLEIN_Established_Calvin_Klein__-_00K9H211C1BLK__-_www.calvinklein 1.png",
@@ -116,7 +116,7 @@ const products: Array<ProductsProps> = [
 		color: "BLACK/SILVER",
 	},
 	{
-		vendorСode: 43032834,
+		_vendorСode: "43032834",
 		name: "Calvin Klein completion",
 		image: "/images/Daco_5698667 3.png",
 		description:
@@ -137,7 +137,7 @@ const products: Array<ProductsProps> = [
 		new: true,
 	},
 	{
-		vendorСode: 43032356,
+		_vendorСode: "43032356",
 		name: "Calvin Klein City",
 		image: "/images/Daco_5698667 1 2.png",
 		description:
@@ -158,7 +158,7 @@ const products: Array<ProductsProps> = [
 		new: true,
 	},
 	{
-		vendorСode: 43032349,
+		_vendorСode: "43032349",
 		name: "CALVIN KLEIN ESTABLISHED",
 		image: "/images/71tQgGJb4vL 2.png",
 		description:
@@ -179,7 +179,7 @@ const products: Array<ProductsProps> = [
 		new: true,
 	},
 	{
-		vendorСode: 43041452,
+		_vendorСode: "43041452",
 		name: "Calvin Klein Night",
 		image: "/images/orig.jpg",
 		description:

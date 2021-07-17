@@ -49,6 +49,14 @@ export const TextHeading6 = styled.h6`
 	text-transform: none;
 	letter-spacing: normal;
 `;
+export const TextButton = styled.p`
+	font-family: "Red Hat Text 400";
+	color: ${colors.black};
+	font-size: ${FONT_SIZES.size32};
+	text-transform: none;
+	letter-spacing: normal;
+	margin: 0px;
+`;
 
 export const TextParagraph1 = styled.p`
 	font-family: "Red Hat Text 500";
@@ -85,6 +93,31 @@ export const TextDescription2 = styled.p`
 	font-family: "Red Hat Text 500";
 	color: ${colors.grey};
 	font-size: ${FONT_SIZES.size11};
+	text-transform: none;
+	letter-spacing: normal;
+`;
+
+export const TextDescription3 = styled.p`
+	font-family: "Red Hat Text 400";
+	color: ${colors.black};
+	font-size: ${FONT_SIZES.size64};
+	text-transform: none;
+	letter-spacing: normal;
+`;
+
+export const TextDescription4 = styled.p`
+	font-family: "Red Hat Text 400";
+	color: ${colors.black};
+	font-size: ${FONT_SIZES.size48};
+	text-transform: none;
+	letter-spacing: normal;
+`;
+
+export const TextDescription5 = styled.p`
+	margin: 0;
+	font-family: "Red Hat Text 400";
+	color: ${colors.grey};
+	font-size: ${FONT_SIZES.size36};
 	text-transform: none;
 	letter-spacing: normal;
 `;

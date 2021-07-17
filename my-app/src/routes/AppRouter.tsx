@@ -39,9 +39,8 @@ function AppRouter() {
 			<Route exact path={pageRoutes.PAYMENT}>
 				<Payment />
 			</Route>
-			<Route exact path={pageRoutes.CARD_PRODUCT}>
-				<CardProduct />
-			</Route>
+			<Route path={pageRoutes.CARD_PRODUCT} component={CardProduct}></Route>
+
 			<Route exact path={pageRoutes.FAVORITES}>
 				<Favorites />
 			</Route>

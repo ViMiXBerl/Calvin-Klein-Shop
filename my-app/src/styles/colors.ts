@@ -5,4 +5,5 @@ export const colors: Colors = {
 	grey: "#000000BA",
 	white: "#FFFFFF",
 	braun: "#a09785",
+	borderColor: "#4A4A4A",
 };

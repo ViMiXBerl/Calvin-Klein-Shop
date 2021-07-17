@@ -3,4 +3,5 @@ export interface Colors {
 	grey: string;
 	white: string;
 	braun: string;
+	borderColor: string;
 }

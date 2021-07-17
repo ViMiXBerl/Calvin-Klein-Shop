@@ -6,7 +6,7 @@ export const pageRoutes: PageRoutes = {
 	CONTACTS: "/contacts",
 	DELIVERY: "/delivery",
 	STORES: "/stores",
-	CARD_PRODUCT: "/product/cardProduct/:vendorСode",
+	CARD_PRODUCT: `/product/cardProduct/:vendorCode`,
 	SHOPPING_CART: "/cart",
 	PAYMENT: "/payment",
 	NOT_FOUND: "/notFoundPage",

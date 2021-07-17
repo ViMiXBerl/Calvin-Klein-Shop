@@ -1,17 +1,22 @@
 import { CardListProps } from "modules/NewProductsList/types";
 
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Nav } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 import Product from "components/Product/Product";
 import Text from "components/Text/Text";
+import Button from "components/Button/Button";
 
 import products from "products";
-import { StyledRow } from "modules/NewProductsList/NewProductsListStyled";
+import {
+	StyledRow,
+	StyledFavorites,
+} from "modules/NewProductsList/NewProductsListStyled";
 import { Round } from "assets";
 
 const ProductList = ({ children }: CardListProps): any => {
 	const newProd = products.filter((product): any => product.new === true);
-	console.log(newProd);
+
 	return (
 		<>
 			<Row>
@@ -21,6 +26,24 @@ const ProductList = ({ children }: CardListProps): any => {
 					<Text variant='p2'>
 						The heart of this watch is a highly reliable Swiss quartz movement.
 					</Text>
+					<Row>
+						<Col>
+							<Button type='button' disabled={false}>
+								<LinkContainer to='/catalog'>
+									<Nav>
+										<Text variant='p4'>Collection</Text>
+									</Nav>
+								</LinkContainer>
+							</Button>
+						</Col>
+						<Col>
+							<LinkContainer to='/favorites'>
+								<Nav>
+									<StyledFavorites />
+								</Nav>
+							</LinkContainer>
+						</Col>
+					</Row>
 				</Col>
 				<Col></Col>
 				<Col></Col>
@@ -30,7 +53,7 @@ const ProductList = ({ children }: CardListProps): any => {
 			</Row>
 			<Row>
 				{newProd.map((product): any => (
-					<Col key={product.vendorСode} sm={12} md={6} lg={4} xl={3}>
+					<Col key={product._vendorСode} sm={12} md={6} lg={4} xl={3}>
 						<Product product={product} />
 					</Col>
 				))}

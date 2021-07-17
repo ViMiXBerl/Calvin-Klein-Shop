@@ -1,5 +1,4 @@
 import { ProductProps } from "components/Product/types";
-import Header from "modules/Header/Header";
 import Text from "components/Text/Text";
 import { Card } from "react-bootstrap";
 
@@ -9,12 +8,12 @@ const Product = ({ product }: ProductProps): any => {
 	return (
 		<>
 			<CardStyled className='my-3 p-3 rounded'>
-				<ProductLink href={`/product/cardProduct/${product.vendorСode}`}>
+				<ProductLink to={`/product/cardProduct/${product._vendorСode}`}>
 					<Card.Img src={product.image} alt={product.name} variant='top' />
 				</ProductLink>
 
 				<Card.Body>
-					<ProductLink href={`/product/cardProduct/${product.vendorСode}`}>
+					<ProductLink to={`/product/cardProduct/${product._vendorСode}`}>
 						<Card.Title as='div'>
 							<Text variant='p2'>{product.name}</Text>
 						</Card.Title>

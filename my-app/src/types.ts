@@ -1,5 +1,5 @@
 export interface ProductsProps {
-	vendorСode: number;
+	_vendorСode: string;
 	name: string;
 	image: string;
 	description: string;
