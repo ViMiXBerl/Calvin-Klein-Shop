@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 export interface CardProductProps {
-	vendorCode?: string;
+	id?: string;
 	children?: ReactNode;
 }
 

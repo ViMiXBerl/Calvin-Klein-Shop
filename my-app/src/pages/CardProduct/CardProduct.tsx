@@ -22,6 +22,7 @@ const CardProduct = ({ match }: RouteComponentProps<CardProductProps>): any => {
 		case: "",
 		bracelet: "",
 		strap: "",
+		closure: "",
 		material: "",
 		movement: "",
 		dial: "",
@@ -32,9 +33,7 @@ const CardProduct = ({ match }: RouteComponentProps<CardProductProps>): any => {
 
 	useEffect((): any => {
 		const fetchProduct = async () => {
-			const { data } = await axios.get(
-				`/api/products/${match.params.vendorCode}`
-			);
+			const { data } = await axios.get(`/api/products/${match.params.id}`);
 
 			setProduct(data);
 		};
@@ -67,6 +66,7 @@ const CardProduct = ({ match }: RouteComponentProps<CardProductProps>): any => {
 							<Text variant='d5'>
 								- Bracelet/strap: {product?.bracelet || product?.strap}
 							</Text>
+							<Text variant='d5'>- Closure: {product?.closure || "none"}</Text>
 							<Text variant='d5'>
 								{" "}
 								- Material: {product?.material || "none"}

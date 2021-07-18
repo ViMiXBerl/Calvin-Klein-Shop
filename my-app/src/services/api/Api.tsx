@@ -20,7 +20,7 @@ export const AllProducts = (): any => {
 		<>
 			<Row>
 				{products.map((product): any => (
-					<Col key={product._vendorCode} sm={12} md={6} lg={4} xl={3}>
+					<Col key={product._id} sm={12} md={6} lg={4} xl={3}>
 						<Product product={product} />
 					</Col>
 				))}
@@ -48,7 +48,7 @@ export const NewProducts = (): any => {
 		<>
 			<Row>
 				{newProd.map((product): any => (
-					<Col key={product._vendorСode} sm={12} md={6} lg={4} xl={3}>
+					<Col key={product._id} sm={12} md={6} lg={4} xl={3}>
 						<Product product={product} />
 					</Col>
 				))}
