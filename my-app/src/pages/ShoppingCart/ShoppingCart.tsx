@@ -1,7 +1,7 @@
-import { ShoppingCartProps } from "pages/ShoppingCart/types";
+// import { ShoppingCartProps } from "pages/ShoppingCart/types";
 import Header from "modules/Header/Header";
 
-const ShoppingCart = ({}: ShoppingCartProps): any => {
+const ShoppingCart = (): any => {
 	return <Header></Header>;
 };
 

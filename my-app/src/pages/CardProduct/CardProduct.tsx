@@ -1,16 +1,46 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
+
 import Header from "modules/Header/Header";
 import Text from "components/Text/Text";
 import Button from "components/Button/Button";
+
 import { StyledFavorites } from "modules/NewProductsList/NewProductsListStyled";
-import { Row, Col, Image, ListGroup, Card } from "react-bootstrap";
-import products from "products";
-import { CardProductProps, RouteComponentProps } from "pages/CardProduct/types";
+import { Col, Image, ListGroup } from "react-bootstrap";
 import { RowStyled } from "pages/CardProduct/CardProductStyled";
 
+import { CardProductProps, RouteComponentProps } from "pages/CardProduct/types";
+
 const CardProduct = ({ match }: RouteComponentProps<CardProductProps>): any => {
-	const product = products.find(
-		(prod) => prod._vendorСode === match.params.vendorCode
-	);
+	const [product, setProduct] = useState({
+		image: "",
+		name: "",
+		price: 0,
+		brand: "",
+		sex: "",
+		color: "",
+		case: "",
+		bracelet: "",
+		strap: "",
+		material: "",
+		movement: "",
+		dial: "",
+		caseSize: 0,
+		waterResistant: 0,
+		countInStock: 0,
+	});
+
+	useEffect((): any => {
+		const fetchProduct = async () => {
+			const { data } = await axios.get(
+				`/api/products/${match.params.vendorCode}`
+			);
+
+			setProduct(data);
+		};
+
+		fetchProduct();
+	}, [match.params.vendorCode]);
 
 	return (
 		<>
@@ -58,7 +88,6 @@ const CardProduct = ({ match }: RouteComponentProps<CardProductProps>): any => {
 						</ListGroup.Item>
 						<ListGroup.Item>
 							<Button type='button' disabled={product?.countInStock === 0}>
-								{console.log(product?.countInStock === 0)}
 								<Text variant='d5'>Add to Cart</Text>
 							</Button>
 							<StyledFavorites />
@@ -71,9 +100,3 @@ const CardProduct = ({ match }: RouteComponentProps<CardProductProps>): any => {
 };
 
 export default CardProduct;
-
-{
-	/* <ListGroup.Item>
-	<Text variant='d5'> Description: {product?.description}</Text>
-</ListGroup.Item> */
-}

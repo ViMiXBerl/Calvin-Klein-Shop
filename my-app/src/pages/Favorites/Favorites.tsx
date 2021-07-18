@@ -1,7 +1,7 @@
-import { FavoritesProps } from "pages/Favorites/types";
+// import { FavoritesProps } from "pages/Favorites/types";
 import Header from "modules/Header/Header";
 
-const Favorites = ({}: FavoritesProps): any => {
+const Favorites = (): any => {
 	return <Header></Header>;
 };
 

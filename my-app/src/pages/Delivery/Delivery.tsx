@@ -1,7 +1,7 @@
-import { DeliveryProps } from "pages/Delivery/types";
+// import { DeliveryProps } from "pages/Delivery/types";
 import Header from "modules/Header/Header";
 
-const Delivery = ({}: DeliveryProps): any => {
+const Delivery = (): any => {
 	return <Header></Header>;
 };
 

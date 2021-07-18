@@ -1,7 +1,7 @@
-import { StoresProps } from "pages/Stores/types";
+// import { StoresProps } from "pages/Stores/types";
 import Header from "modules/Header/Header";
 
-function Stores({}: StoresProps): any {
+function Stores(): any {
 	return <Header></Header>;
 }
 

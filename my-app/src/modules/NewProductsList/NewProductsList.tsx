@@ -3,20 +3,17 @@ import { CardListProps } from "modules/NewProductsList/types";
 import { Row, Col, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
-import Product from "components/Product/Product";
 import Text from "components/Text/Text";
 import Button from "components/Button/Button";
 
-import products from "products";
 import {
 	StyledRow,
 	StyledFavorites,
 } from "modules/NewProductsList/NewProductsListStyled";
 import { Round } from "assets";
+import { NewProducts } from "services/api/Api";
 
 const ProductList = ({ children }: CardListProps): any => {
-	const newProd = products.filter((product): any => product.new === true);
-
 	return (
 		<>
 			<Row>
@@ -51,13 +48,7 @@ const ProductList = ({ children }: CardListProps): any => {
 			<Row className='text-center'>
 				<Text variant='h2'>New products</Text>
 			</Row>
-			<Row>
-				{newProd.map((product): any => (
-					<Col key={product._vendorСode} sm={12} md={6} lg={4} xl={3}>
-						<Product product={product} />
-					</Col>
-				))}
-			</Row>
+			<NewProducts />
 			<Row>
 				<Col>
 					<StyledRow>
