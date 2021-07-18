@@ -16,8 +16,6 @@ export const AllProducts = (): any => {
 		fetchProducts();
 	}, []);
 
-	console.log(products);
-
 	return (
 		<>
 			<Row>

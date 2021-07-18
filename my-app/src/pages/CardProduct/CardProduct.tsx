@@ -40,7 +40,7 @@ const CardProduct = ({ match }: RouteComponentProps<CardProductProps>): any => {
 		};
 
 		fetchProduct();
-	}, [match.params.vendorCode]);
+	}, [match]);
 
 	return (
 		<>
