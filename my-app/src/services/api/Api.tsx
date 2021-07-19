@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Product from "components/Product/Product";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchListProducts } from "modules/redux/actions";
 import { RootState } from "store/store";
@@ -25,7 +25,7 @@ export const AllProducts = (): any => {
 	}, [dispath]);
 
 	return (
-		<>
+		<Container>
 			{loading ? (
 				<Loader />
 			) : error ? (
@@ -43,7 +43,7 @@ export const AllProducts = (): any => {
 					</Row>
 				</Col>
 			)}
-		</>
+		</Container>
 	);
 };
 
