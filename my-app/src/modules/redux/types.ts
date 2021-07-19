@@ -1,5 +1,5 @@
 export interface IInitialState {
-	products: Array<Object>;
+	products: Array<any>;
 	loading: boolean;
 	error: any;
 }

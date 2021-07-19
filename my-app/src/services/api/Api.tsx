@@ -12,13 +12,18 @@ import Loader from "components/Loader/Loader";
 export const AllProducts = (): any => {
 	const dispath = useDispatch();
 	const productList = useSelector((state: RootState) => state.productList);
-	const { loading, error, products } = productList;
+	const { products, loading, error } = productList;
+
+	// const products = productList.products;
+	// console.log(productList);
+	console.log(products);
+	console.log(loading);
+	console.log(error);
 
 	useEffect((): any => {
 		dispath(fetchListProducts());
 	}, [dispath]);
 
-	console.log(products);
 	return (
 		<>
 			{loading ? (
@@ -27,10 +32,11 @@ export const AllProducts = (): any => {
 				<Message variant='danger'>{error}</Message>
 			) : (
 				<Col>
+					{console.log(products)}
+
 					<Row>
-						{products.map(({ product }: any) => (
+						{products.map((product: any) => (
 							<Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-								{console.log(product._id)}
 								<Product product={product} />
 							</Col>
 						))}

@@ -2,5 +2,5 @@ import { ReactNode } from "react";
 
 export interface ProductProps {
 	children?: ReactNode;
-	product: any;
+	product?: any;
 }

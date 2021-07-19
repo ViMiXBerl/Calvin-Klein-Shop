@@ -5,7 +5,7 @@ import Header from "modules/Header/Header";
 import Text from "components/Text/Text";
 import Button from "components/Button/Button";
 
-import { StyledFavorites } from "modules/NewProductsList/NewProductsListStyled";
+import { StyledFavorites } from "pages/CardProduct/CardProductStyled";
 import { Col, Image, ListGroup } from "react-bootstrap";
 import { RowStyled } from "pages/CardProduct/CardProductStyled";
 
