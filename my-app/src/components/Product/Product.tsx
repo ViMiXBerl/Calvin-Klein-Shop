@@ -2,14 +2,22 @@ import { ProductProps } from "components/Product/types";
 import Text from "components/Text/Text";
 import { Card } from "react-bootstrap";
 
-import { ProductLink, CardStyled } from "components/Product/ProductStyled";
+import {
+	ProductLink,
+	CardStyled,
+	CardProductImage,
+} from "components/Product/ProductStyled";
 
 const Product = ({ product }: ProductProps): any => {
 	return (
 		<>
 			<CardStyled className='my-3 p-3 rounded'>
 				<ProductLink to={`/product/cardProduct/${product._id}`}>
-					<Card.Img src={product.image} alt={product.name} variant='top' />
+					<CardProductImage
+						src={product.image}
+						alt={product.name}
+						variant='top'
+					/>
 				</ProductLink>
 
 				<Card.Body>

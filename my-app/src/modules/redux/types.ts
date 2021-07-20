@@ -3,3 +3,9 @@ export interface IInitialState {
 	loading: boolean;
 	error: any;
 }
+
+export interface IInitialStateProduct {
+	product: any;
+	loading: boolean;
+	error: any;
+}
